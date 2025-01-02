@@ -14,25 +14,23 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapView = () => {
-  // Mock data - replace with actual API data
   const bins = [
     {
       id: 1,
-      location: "Block A",
+      location: 'Block A',
       coordinates: [24.61896207319831, 73.854558],
       fillLevel: 75,
-      status: "active",
+      status: 'active',
     },
     {
       id: 2,
-      location: "Block B",
+      location: 'Block B',
       coordinates: [24.61915106319831, 73.855348],
       fillLevel: 75,
-      status: "active",
+      status: 'active',
     },
   ];
 
-  // Animation Variants
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
@@ -48,12 +46,12 @@ const MapView = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="bg-white dark:bg-dark-bg-secondary rounded-lg shadow-lg p-4"
+      className="bg-white dark:bg-dark-bg-secondary rounded-lg shadow-lg p-4 max-w-full min-w-[320px]"
     >
-      <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+      <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">
         Bin Locations
       </h2>
-      <div className="h-[400px] rounded-lg overflow-hidden">
+      <div className="h-[300px] sm:h-[400px] rounded-lg overflow-hidden">
         <MapContainer
           center={[24.61915106319831, 73.85504867942632]}
           zoom={17}

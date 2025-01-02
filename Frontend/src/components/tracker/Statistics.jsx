@@ -25,12 +25,12 @@ const Statistics = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="bg-white dark:bg-dark-bg-secondary rounded-lg shadow-lg p-4"
+      className="bg-white dark:bg-dark-bg-secondary rounded-lg shadow-lg p-4 sm:p-6 md:p-8"
     >
       <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
         Weekly Waste Collection
       </h2>
-      <div className="h-[400px]">
+      <div className="h-[300px] sm:h-[350px] md:h-[400px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />

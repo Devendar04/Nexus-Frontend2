@@ -117,7 +117,7 @@ const CommunityFeed = () => {
 
           {/* Post Content */}
           <div className="px-4 pb-3">
-            <p className="text-gray-800 dark:text-gray-200 mb-4">{post.content}</p>
+            <p className="text-gray-800 dark:text-gray-200 mb-4 overflow-clip">{post.content}</p>
             {post.image && (
               <img
                 src={post.image}
