@@ -1,0 +1,13 @@
+/* Add to index.css or create a new CSS file */
+:root {
+  --transition-duration: 200ms;
+}
+
+/* Smooth theme transitions */
+*,
+::before,
+::after {
+  transition: background-color var(--transition-duration) ease-in-out,
+              border-color var(--transition-duration) ease-in-out,
+              color var(--transition-duration) ease-in-out;
+}
